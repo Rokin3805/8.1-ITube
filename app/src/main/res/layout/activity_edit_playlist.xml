@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/teal_700"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YouTube URL:"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextYouTubeURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/cardview_shadow_start_color"
+        >
+
+        <Button
+            android:id="@+id/buttonMyPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY PLAYLIST"
+            android:layout_marginBottom="8dp"
+            android:onClick="myPlaylistButton"
+            />
+
+        <Button
+            android:id="@+id/buttonAddToPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD TO PLAYLIST"
+            android:layout_marginBottom="8dp"
+            android:onClick="addLink"
+            />
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:onClick="playButton"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
